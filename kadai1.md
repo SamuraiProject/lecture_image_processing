@@ -1,48 +1,57 @@
 # 課題１レポート（サンプル）
 
-標準画像「Lenna」を原画像とする．この画像は縦512画像，横512画素による正方形のディジタルカラー画像である．
+標準画像「ai-kato.jpg」を原画像とする．この画像は縦640画像，横640画素による正方形のディジタルカラー画像である。
+なお、サンプルでいただいたmatlabより以下を変更している。
 
-ORG=imread('Lenna.png'); % 原画像の入力  
-imagesc(ORG); axis image; % 画像の表示
+## kadai1.m編集箇所
+- 変数の定義部と、ロジック部を分割し、可変しやすい構造に変更
+- リサイズ&サンプリング化はロジックが似通っていたので、for文にまとめステップ数を削減
+- 最終的には、ダウンサンプリング後のファイルが一括で欲しいので、imwriteによりファイルを書き出し
 
-によって，原画像を読み込み，表示した結果を図１に示す．
+## 説明
+元画像は以下の通りである。
 
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box01.jpg)  
 図1 原画像
 
-原画像を1/2サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．なお，拡大する際には，単純補間するために「box」オプションを設定する．
+その後は、サンプリングしたい数値を1次元配列(BoxRateを)定義して、以下のように変更後の画像を動的に生成している。
 
-IMG = imresize(ORG,0.5); % 画像の縮小  
-IMG2 = imresize(IMG,2,'box'); % 画像の拡大
+```
+% Boxrateを元に画像をボックス化して出力
+for BoxRate = [1 2 4 8 16 32]
+    % 出力ファイルパス
+    OutputImagePath = sprintf('%s%s-box%02d%s', OutputImageDir, OriginalImageFileName, BoxRate, OriginalImageFileExt);
+    % 画像の縮小
+    IMG = imresize(IMG, ChangeScale);
+    % 画像の拡大
+    IMG2 = imresize(IMG, BoxRate,'box');
+    % デバッグ用のパス表示
+    disp(OutputImagePath);
+    % ファイルの書き込み
+    imwrite(IMG2, OutputImagePath);
+end
+```
+
+以下にダウンサンプリングした結果画像を示す。
+
 
 1/2サンプリングの結果を図２に示す．
-
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box02.jpg)  
 図2 1/2サンプリング
 
-同様に原画像を1/4サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．すなわち，
-
-IMG = imresize(ORG,0.5); % 画像の縮小  
-IMG2 = imresize(IMG,2,'box'); % 画像の拡大
-
-とする．1/4サンプリングの結果を図３に示す．
-
+1/4サンプリングの結果を図３に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box04.jpg)  
 図3 1/4サンプリング
 
-1/8から1/32サンプリングは，
-
-IMG = imresize(ORG,0.5); % 画像の縮小  
-IMG2 = imresize(IMG,2,'box'); % 画像の拡大
-
-を繰り返す．サンプリングの結果を図４～６に示す．
-
+1/8サンプリングの結果を図３に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box08.jpg)  
 図4 1/8サンプリング
 
+1/16サンプリングの結果を図３に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box16.jpg)  
 図5 1/16サンプリング
 
+1/32サンプリングの結果を図３に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box32.jpg)  
 図6 1/32サンプリング
 
