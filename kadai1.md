@@ -1,7 +1,7 @@
-# 課題１レポート（サンプル）
+# 課題１レポート
 
 標準画像「ai-kato.jpg」を原画像とする．この画像は縦640画像，横640画素による正方形のディジタルカラー画像である。
-なお、サンプルでいただいたmatlabより以下を変更している。
+
 
 ## kadai1.m編集箇所
 差分(https://github.com/SamuraiProject/lecture_image_processing/pull/1/files#diff-b3327dde35532a75dd6996bc86736186)
