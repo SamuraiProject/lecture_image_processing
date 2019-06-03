@@ -4,6 +4,7 @@
 なお、サンプルでいただいたmatlabより以下を変更している。
 
 ## kadai1.m編集箇所
+差分(https://github.com/SamuraiProject/lecture_image_processing/pull/1/files#diff-b3327dde35532a75dd6996bc86736186)
 - 変数の定義部と、ロジック部を分割し、可変しやすい構造に変更
 - リサイズ&サンプリング化はロジックが似通っていたので、for文にまとめステップ数を削減
 - 最終的には、ダウンサンプリング後のファイルが一括で欲しいので、imwriteによりファイルを書き出し
@@ -43,15 +44,15 @@ end
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box04.jpg)  
 図3 1/4サンプリング
 
-1/8サンプリングの結果を図３に示す．
+1/8サンプリングの結果を図4に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box08.jpg)  
 図4 1/8サンプリング
 
-1/16サンプリングの結果を図３に示す．
+1/16サンプリングの結果を図5に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box16.jpg)  
 図5 1/16サンプリング
 
-1/32サンプリングの結果を図３に示す．
+1/32サンプリングの結果を図6に示す．
 ![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai1/ai-kato-box32.jpg)  
 図6 1/32サンプリング
 
