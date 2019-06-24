@@ -7,7 +7,9 @@
 # 説明
 
 
-https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg
+![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg)  
+図1 原画像
+
 https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-grayscale.png
 https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step2.png
 https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step4.png
