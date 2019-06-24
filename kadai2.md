@@ -6,8 +6,7 @@
 
 # 説明
 
-
-![原画像](https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg)  
+[原画像]<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg" width="400">
 図1 原画像
 
 https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-grayscale.png
