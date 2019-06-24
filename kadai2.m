@@ -1,25 +1,43 @@
-% ‰Û‘è‚Q@ŠK’²”‚Æ‹^Ž——ÖŠs
-% ‚QŠK’²C‚SŠK’²C‚WŠK’²‚Ì‰æ‘œ‚ð¶¬‚¹‚æD
-% ‰º‹L‚ÍƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚Å‚ ‚éD
-% ‰Û‘èì¬‚É‚ ‚½‚Á‚Ä‚ÍuLennavˆÈŠO‚Ì‰æ‘œ‚ð—p‚¢‚æD
+% å¤‰æ•°ã‚’ã‚¯ãƒªã‚¢
+clear;
 
-clear; % •Ï”‚ÌƒI[ƒ‹ƒNƒŠƒA
+% å…ƒç”»åƒã‚’ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«åŒ–
+WORKDIR="images/kadai2";
+ORG=imread('images/origin/taki.jpg');
+ORG = rgb2gray(ORG); colormap(gray);
+OutputImagePath = sprintf('%s/%s', WORKDIR, "taki-grayscale.png");
+imwrite(ORG, OutputImagePath, 'BitDepth', 16);
 
-ORG=imread('Lenna.png'); % Œ´‰æ‘œ‚Ì“ü—Í
-ORG = rgb2gray(ORG); colormap(gray); colorbar;
-imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\Ž¦
-pause; % ˆêŽž’âŽ~
-
-% ‚QŠK’²‰æ‘œ‚Ì¶¬
+% 2éšŽèª¿ç”»åƒã®ç”Ÿæˆ
 IMG = ORG>128;
-imagesc(IMG); colormap(gray); colorbar;  axis image;
-pause;
+imagesc(IMG); colormap(gray);
+OutputImagePath = sprintf('%s/%s', WORKDIR, "taki-step2.png");
+IMG=IMG-min(IMG(:)); % shift data such that the smallest element of A is 0 
+IMG=IMG/max(IMG(:)); % normalize the shifted data to 1 
+imwrite(IMG, OutputImagePath, 'BitDepth', 16);
 
-% ‚SŠK’²‰æ‘œ‚Ì¶¬
+% 4éšŽèª¿ç”»åƒã®ç”Ÿæˆ
 IMG0 = ORG>64;
 IMG1 = ORG>128;
 IMG2 = ORG>192;
 IMG = IMG0 + IMG1 + IMG2;
-imagesc(IMG); colormap(gray); colorbar;  axis image;
+imagesc(IMG); colormap(gray);
+OutputImagePath = sprintf('%s/%s', WORKDIR, "taki-step4.png");
+IMG=IMG-min(IMG(:)); % shift data such that the smallest element of A is 0 
+IMG=IMG/max(IMG(:)); % normalize the shifted data to 1 
+imwrite(IMG, OutputImagePath, 'BitDepth', 16);
 
-% ‚WŠK’²‚É‚Â‚¢‚Ä‚ÍCŠeŽ©ŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢D
+% 8éšŽèª¿ç”»åƒã®ç”Ÿæˆ
+IMG0 = ORG>32;
+IMG1 = ORG>64;
+IMG2 = ORG>96;
+IMG3 = ORG>128;
+IMG4 = ORG>160;
+IMG5 = ORG>192;
+IMG6 = ORG>224; 
+IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 + IMG6;
+imagesc(IMG); colormap(gray);
+OutputImagePath = sprintf('%s/%s', WORKDIR, "taki-step8.png");
+IMG=IMG-min(IMG(:)); % shift data such that the smallest element of A is 0 
+IMG=IMG/max(IMG(:)); % normalize the shifted data to 1 
+imwrite(IMG, OutputImagePath, 'BitDepth', 16);

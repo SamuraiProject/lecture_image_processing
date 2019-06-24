@@ -1,25 +1,25 @@
-% •Ï”‚ÌƒI[ƒ‹ƒNƒŠƒA
+% å¤‰æ•°ã®ã‚ªãƒ¼ãƒ«ã‚¯ãƒªã‚¢
 clear;
 
-% •Ï”‚ğéŒ¾
+% å¤‰æ•°ã‚’å®£è¨€
 OriginalImageDir = 'images/origin/';
 OutputImageDir = 'images/kadai1/';
 OriginalImageFileName = 'ai-kato';
 OriginalImageFileExt = '.jpg';
 ChangeScale = 0.5;
 
-% Œ´‰æ‘œ‚Ì“ü—Í
+% åŸç”»åƒã®å…¥åŠ›
 OriginalImagePath = sprintf('%s%s%s', OriginalImageDir, OriginalImageFileName, OriginalImageFileExt);
 OriginalImage = imread(OriginalImagePath);
 IMG = OriginalImage;
 
-% Boxrate‚ğŒ³‚É‰æ‘œ‚ğƒ{ƒbƒNƒX‰»‚µ‚Äo—Í
+% Boxrateã‚’å…ƒã«ç”»åƒã‚’ãƒœãƒƒã‚¯ã‚¹åŒ–ã—ã¦å‡ºåŠ›
 for BoxRate = [1 2 4 8 16 32]
     OutputImagePath = sprintf('%s%s-box%02d%s', OutputImageDir, OriginalImageFileName, BoxRate, OriginalImageFileExt);
-    IMG = imresize(IMG, ChangeScale); % ‰æ‘œ‚Ìk¬
-    IMG2 = imresize(IMG, BoxRate,'box'); % ‰æ‘œ‚ÌŠg‘å
+    IMG = imresize(IMG, ChangeScale); % â€°Ã¦â€˜Å“â€šÃŒÂkÂÂ¬
+    IMG2 = imresize(IMG, BoxRate,'box'); % â€°Ã¦â€˜Å“â€šÃŒÅ gâ€˜Ã¥
     disp(OutputImagePath);
     imwrite(IMG2, OutputImagePath);
 end
 
-msgbox("ˆ—Š®—¹");
+msgbox("å‡¦ç†å®Œäº†");
