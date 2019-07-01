@@ -19,3 +19,4 @@
 <img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step8.png" width="400"> <br />図5 8階調
 
 # 考察
+元画像を2階調化すると、白黒2値となり、元画像をかなり荒くした画像になる。そこから、４階調、８階調と細分化していくと、グレースケール画像に近くなってくることがわかる。
