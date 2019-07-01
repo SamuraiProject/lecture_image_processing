@@ -11,10 +11,8 @@
 <img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-grayscale.png" width="400"><br />
 図2 グレースケール  
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step2.png" width="400"><br />
-図3 2階調
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step4.png" width="400"><br />
-図4 4階調
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step2.png" width="400"><br />図3 2階調
+
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step4.png" width="400"><br />図4 4階調
  
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step8.png" width="400"> <br />
-図4 8階調
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step8.png" width="400"> <br />図4 8階調
