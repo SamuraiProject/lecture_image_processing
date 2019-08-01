@@ -12,7 +12,7 @@ IMG = ORG;
 OutputImagePath = sprintf('%s/%s', WORKDIR, "taki-grayscale.png");
 imwrite(IMG, OutputImagePath, 'BitDepth', 16);
 
-% 輝度値を元に画像をボックス化して出力
+% 輝度値を元に画像を出力
 for Kido = [64 96 128 192]
     IMG = ORG > Kido;
     IMG=IMG-min(IMG(:)); % shift data such that the smallest element of A is 0 
