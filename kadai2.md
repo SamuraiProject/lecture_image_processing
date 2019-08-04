@@ -23,17 +23,17 @@ imwrite(IMG, OutputImagePath, 'BitDepth', 16);
 # 説明
 図1を元画像とし、図2はカラー画像のグレースケール変換である。図3以降は、図1の元画像の入力に対し、2階調化(図３)、4階調化(図4)、8階調化(図5)となっている。
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg" width="800"><br />
 図1 原画像  
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-grayscale.png" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-grayscale.png" width="800"><br />
 図2 グレースケール  
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step2.png" width="400"><br />図3 2階調  
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step2.png" width="800"><br />図3 2階調  
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step4.png" width="400"><br />図4 4階調  
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step4.png" width="800"><br />図4 4階調  
   
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step8.png" width="400"> <br />図5 8階調
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai2/taki-step8.png" width="800"> <br />図5 8階調
 
 # 考察
 元画像を2階調化すると、白黒2値となり、元画像をかなり荒くした画像になる。そこから、４階調、８階調と細分化していくと、グレースケール画像に近くなってくることがわかる。
