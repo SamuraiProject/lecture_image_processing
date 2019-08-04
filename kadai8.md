@@ -5,7 +5,7 @@
 <img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/ai-kato.jpg" width="800"><br />
 図1 元画像 
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai8/kato-ai-gs.png?raw=true" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai8/kato-ai-gs.png?raw=true" width="800"><br />
 図2 グレースケール画像
 
 <img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai8/kato-ai-128-2chi.png" width="800"><br />
