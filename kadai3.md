@@ -12,22 +12,22 @@ for Kido = [64 96 128 192]
 end
 ```
 # 説明
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/origin/taki.jpg" width="800"><br />
 ※元画像  
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-grayscale.png" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-grayscale.png" width="800"><br />
 ※グレースケール
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido64.png" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido64.png" width="800"><br />
 ※輝度値64を閾値に2値化
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido96.png" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido96.png" width="800"><br />
 ※輝度値96を閾値に2値化
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido128.png" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido128.png" width="800"><br />
 ※輝度値128を閾値に2値化
 
-<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido192.png" width="400"><br />
+<img src="https://github.com/SamuraiProject/lecture_image_processing/blob/master/images/kadai3/taki-kido192.png" width="800"><br />
 ※輝度値192を閾値に2値化
 
 # 考察
